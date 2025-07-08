@@ -207,6 +207,61 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <p class="section-subtitle">Portfolio</p>
+          <h2 class="section-title">Recent Transformations</h2>
+        </div>
+
+        <div class="gallery-filters scroll-reveal">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="bridal">
+            Bridal Styling
+          </button>
+          <button class="filter-btn" data-filter="color">Color Work</button>
+          <button class="filter-btn" data-filter="extensions">
+            Extensions
+          </button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Gallery items will be populated by JavaScript -->
+        </div>
+
+        <div class="gallery-cta scroll-reveal">
+          <a
+            href="https://instagram.com/karend_hair_"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fab fa-instagram"></i> View More on Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Modern Dialog Lightbox -->
+      <dialog class="gallery-lightbox" id="gallery-lightbox">
+        <div class="lightbox-content">
+          <button class="lightbox-close" id="lightbox-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="lightbox-nav lightbox-next" id="lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+          <div class="lightbox-info">
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+            <p class="lightbox-description" id="lightbox-description"></p>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
     <!-- Contact Section -->
     <section class="section contact" id="contact">
       <div class="container">
@@ -372,5 +427,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
   </body>
 </html>
