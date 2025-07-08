@@ -185,3 +185,84 @@ body {
     color: white;
     transform: translateY(-2px);
 }
+
+/* Animated SVG Logo */
+.logo-container {
+    margin-bottom: 3rem;
+}
+
+#animated-text {
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.animated-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    fill: transparent;
+    stroke: var(--gold-primary);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+}
+
+/* Calculate stroke-dasharray based on text length */
+.karen {
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+    animation: drawStroke 2.5s ease-out 0.5s forwards,
+               fillText 0.8s ease-out 3.2s forwards;
+}
+
+.dwyer {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    animation: drawStroke 2.5s ease-out 2s forwards,
+               fillText 0.8s ease-out 4.7s forwards;
+}
+
+/* Stroke drawing animation */
+@keyframes drawStroke {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Fill animation */
+@keyframes fillText {
+    to {
+        fill: var(--gold-primary);
+        stroke-width: 1;
+    }
+}
+
+/* Animation delays for hero content */
+.hero-subtitle {
+    opacity: 0;
+    animation: fadeInUp 1s ease 5.5s forwards;
+}
+
+.hero-description {
+    opacity: 0;
+    animation: fadeInUp 1s ease 6s forwards;
+}
+
+.cta-buttons {
+    opacity: 0;
+    animation: fadeInUp 1s ease 6.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
