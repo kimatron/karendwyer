@@ -3,7 +3,7 @@
 const galleryData = [
     {
         id: 1,
-        src: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        src: './images/gallery/bridal-1.jpg',
         category: 'bridal',
         title: 'Romantic Bridal Updo',
         description: 'Elegant twisted updo with delicate pearl accessories for a castle wedding.'
